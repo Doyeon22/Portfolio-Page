@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stussy Web Redesign</title>
+
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        img{
+            width: 100%;
+            display: none;
+        }
+
+        @media screen and (min-width: 1600px){
+            .portfolio-web{
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 1599px) and (min-width: 1024px){
+            .portfolio-tablet-l{
+                display: block;
+            }
+        }
+        @media screen and (max-width:1023px) and (min-width: 768px){
+            .portfolio-tablet-s{
+                display: block;
+            }
+        }
+        @media screen and (max-width: 767px){
+            .portfolio-mobile{
+                display: block;
+            }
+        }
+    </style> 
+    <main>
+        <img class="portfolio-web" src="image/PC.jpg" alt="PC">
+        <img class="portfolio-tablet-l" src="image/Tablet-L.jpg" alt="tablet-L">
+        <img class="portfolio-tablet-s" src="image/Tablet-S.jpg" alt="tablet-S">
+        <img class="portfolio-mobile" src="image/Mobile.jpg" alt="mobile">
+    </main>
+</body>
+</html>
